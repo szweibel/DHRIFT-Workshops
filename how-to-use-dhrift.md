@@ -90,11 +90,11 @@ If you have made it this far, you have already become familiarized with the stan
 
 Each workshop has a front page that provides the workshop’s description, learning objectives, estimated time, authors, workshop facilitators, ethical considerations, and more. To begin a workshop, simply click the Start Workshop button under the main description or below the workshop's additional details.
 
-TODO: image of workshop front page
+![DHRIFT Workshop Front Page](ws-frontpage.png)
 
 Each individual workshop is divided into sections and subsections. You can navigate between sections by using the back and forward buttons in the navigation bar below each section. You can also access the table of contents for each workshop by clicking on the Workshop Overview button in the top-right corner of the screen.
 
-TODO: image of workshop navigation bar
+![DHRIFT Workshop Navigation](ws-overview.png)
 
 Workshop content can take many forms: text, images, code snippets, interactive exercises and quizzes, and more. Let's explore some of these features.
 
@@ -165,17 +165,17 @@ DHRIFT workshops may also include code editors for other programming languages, 
 
 You have already seen the JupyterLite notebook in action. DHRIFT also supports a standard Python editor, which allows you to write and run Python code in a basic script-style code editor.
 
-TODO: image of Python editor
+![Python Code Editor](python-editor.png)
 
 In addition, DHRIFT also provides a dedicated REPL (Read-Eval-Print Loop) for Python, which allows you to write and run simple Python commands.
 
-TODO: image of Python REPL
+![Python REPL](python-repl.png)
 
 ### JavaScript
 
 DHRIFT supports a JavaScript code editor, which allow you to write and run JavaScript code directly in your browser. JavaScript is a popular programming language for building interactive web applications, games, and more.
 
-TODO: image of JavaScript editor
+![JavaScript Code Editor](js-editor.png)
 
 ### R
 
@@ -185,9 +185,9 @@ TODO: image of R editor
 
 ### Command Line
 
-DHRIFT supports command line code editors, which allow you to run shell commands directly in your browser. This is useful for working with files, directories, and other system-related tasks. _Note that the command line editor is an emulated terminal and will not have access to your local system._
+DHRIFT supports command line code editors, which allow you to run shell commands directly in your browser. This is useful for working with files, directories, and other system-related tasks. _Note that the command line editor is an emulated terminal and will not have access to your local file system._
 
-TODO: image of command line editor
+![Command Line Editor](cl-editor.png)
 
 ### HTML and CSS
 
@@ -201,9 +201,11 @@ DHRIFT workshops may also include downloadable materials, such as PDFs, slides, 
 
 Here's an example of how downloadable materials might be presented in a workshop:
 
-### Downloadable Materials
+### Downloadable and Importable Materials
 
 TODO: add download button with something
+
+TODO: add import button with something  
 
 ## Glossary
 
@@ -219,13 +221,13 @@ Each workshop is created using Markdown, a lightweight markup language that is e
 
  To access the full glossary of key terms for DHRIFT workshops, you can click on the Glossary button in the header section of the site.
 
- TODO: image of glossary
+![Glossary](glossary.png)
 
 ## Workshop Completion
 
 Each workshop typically ends with a Theory to Practice section, which provides an opportunity to apply what you have learned in the workshop to a real-world scenario. This section may include case studies, projects, or reflection exercises.
 
-TODO: image of Theory to Practice section
+![Theory to Practice](theory-to-practice.png)
 
 In general, these sections are intended to offer learners a chance to extend their understanding beyond the workshop and apply their new skills and knowledge in practical ways. For instance, you might be asked to analyze a dataset, create a visualization, or build a simple web application based on the concepts you have learned in the workshop.
 
@@ -250,12 +252,26 @@ Let's look at some best practices for teaching with DHRIFT.
 When teaching with DHRIFT, there are a few best practices you can follow to ensure a positive and engaging learning experience for your students. Here are some tips to keep in mind:
 
 - **Set Clear Learning Objectives**: Clearly present the learning objectives for each workshop and communicate them to your students at the outset. This will help students understand what they will be learning and why it is important.
-- **Provide Context**: Provide context for the material you are teaching and explain how it relates to the broader field of digital humanities. This will help students see the relevance of the material and how it fits into the larger picture. Additionally, consider ethical considerations and implications of the material you are teaching.
+- **Provide Context**: Provide context for the material you are teaching and explain how it relates to the broader areas of research students might be interested in. Additionally, consider ethical considerations and implications of the material you are teaching.
 - **Encourage Active Learning**: Encourage students to actively engage with the material by asking questions, participating in discussions, and completing exercises. This will help reinforce their learning and make the material more memorable.
 - **Use a Variety of Teaching Methods**: Use a variety of teaching methods to keep students engaged and accommodate different learning styles. This could include different forms of group work in which students attempt to solve a problem together, or individual work in which students complete a task on their own.
-- **Provide Feedback**: Provide feedback to students on their progress as the workshop unfolds. This could include feedback on quizzes, challenges, and exercises, as well as general feedback on their understanding of the material. Reiterate key concepts to bolser understanding.
+- **Provide Feedback**: Provide feedback to students on their progress as the workshop unfolds. This could include feedback on quizzes, challenges, and exercises, as well as general feedback on their understanding of the material. Reiterate key concepts to bolster understanding.
 
 While DHRIFT tries to accommodate these best practices in terms of its design and content, it is, as always, up to the instructor to ensure that these practices are implemented effectively in the classroom.
+
+## Using a Pre-Existing Resource
+
+Although you can create your own workshops from scratch, we also encourage you to explore and utilize the existing DHRIFT workshops available on the platform. These workshops have been developed and tested by experienced DH practitioners and educators and cover a wide range of topics and skill levels. By using these pre-existing resources, you can save time and effort in developing your own workshops and benefit from the expertise of the wider DH community.
+
+Depending on your needs and your students' experience, it is generally a good idea to start with the basics and build up to more advanced topics. Looking at the "Prerequisites" section of a workshop can help you determine if the workshop is appropriate for your students' skill level. For example, you might wish to have students work through the Command Line workshop before moving on to the Python workshop, as the former provides a foundation for the latter.
+
+If you are teaching a live session using a workshop from the platform, you might also suggest that students work through the workshop on their own before the session, so that they can come prepared with questions and be ready to engage with the material in a more meaningful way.
+
+## Scaffolding a Workshop
+
+When teaching with DHRIFT, you may want to scaffold your session to guide students through the material in a structured and logical way. Scaffolding involves breaking down the material into manageable chunks and providing support and guidance to help students progress through the material. 
+
+The platform itself is designed to scaffold the learning experience, with workshops divided into sections and subsections that guide students through the material step by step. Still, it is a good idea as an instructor to work through the material yourself and identify which sections might be more challenging for students and where additional support might be needed. 
 
 ## Teaching and Community Engagement
 
