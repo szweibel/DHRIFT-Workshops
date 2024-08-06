@@ -67,7 +67,6 @@ Concepts we'll focus on:
 - Objects and instantiation
 
 __2)__ Run the simulation by rolling the dice as many times as we want, and evaluate the results.
-__2)__ Run the simulation by rolling the dice as many times as we want, and evaluate the results.
 
 Concepts we'll focus on:
 - Passing methods as arguments into other classes/functions
@@ -106,7 +105,6 @@ Next, let's create a `class` to represent our die object.  You can think of a cl
 For example, if we were to define a `Car` class, we might consider what attributes a car has:  brand, mileage, top speed, diesel or gas, stick or auto, 2-door or 4-door, etc. We could begin defining these characteristics as part of the overall class `Car` using variables. Variables particular to a class are called __data members__. We could then consider what actions a car can perform:  e.g., drive, brake, refuel, etc., and begin to write some functions in our `Car` class that describe these actions. Generally, functions that are specific to a certain class are called __methods__.  Unlike functions proper, methods use __.__ (dot) notation in order to be called--you'll see exactly what that means here shortly.
 
 Because we are creating a dice simulator here, let's go ahead and create a new class `Die`. In a new cell in your Jupyter notebook, type the following:
-Because we are creating a dice simulator here, let's go ahead and create a new class `Die`. In a new cell in your Jupyter notebook, type the following:
 
 ```python
 # create a new die class
@@ -115,7 +113,6 @@ class Die:
         self.sides = sides
 ```
 
-We begin by defining our class. By convention, class names in Python are always Uppercase. We then initialize our class using the `__init__` method.  
 We begin by defining our class. By convention, class names in Python are always Uppercase. We then initialize our class using the `__init__` method.  
 
 The `__init__` method is a special method that Python runs automatically whenever we create a new "instance" (a new object) of a class. This method has two leading underscores and two trailing underscores, a convention that helps prevent Python’s default method names from conflicting with your own method names. The `self` parameter is required in the method definition, and it must come first before any other parameters. It _must_ be included in the definition because whenever we call this method later, the method call will automatically pass the `self` argument. Every method call associated with an object (in this case, our die object) automatically passes `self`, which is a reference to the object itself; it gives the individual instance access to the attributes and methods in the class. If this still seems a bit confusing, don't worry--we'll see how this works in practice throughout the workshop.
@@ -127,7 +124,6 @@ Next, we define our parameters, prefixed with `self`. Any variable prefixed with
 ## Creating Our Method
 
 Next, let's create a __method__ that allows us to roll our die object. Because methods are a part of a class, make sure you are indenting the method so that it is _within_ our overall `Die` class, in the same cell.
-Next, let's create a __method__ that allows us to roll our die object. Because methods are a part of a class, make sure you are indenting the method so that it is _within_ our overall `Die` class, in the same cell.
 
 ```python
     # create a 'roll' method to return a random # between 1-6
@@ -135,7 +131,6 @@ Next, let's create a __method__ that allows us to roll our die object. Because m
         return random.randint(1, self.sides)
 ```
 
-We first define (`def`) our method, and pass in the parameter `self`, which allows us to access the data members of our class. Next, we generate a random number using the `random` library. The `randint` method returns an integer in a range between the first value (`1`) and the second (`self.sides`). We also `return` the value from the method so we can check the results.
 We first define (`def`) our method, and pass in the parameter `self`, which allows us to access the data members of our class. Next, we generate a random number using the `random` library. The `randint` method returns an integer in a range between the first value (`1`) and the second (`self.sides`). We also `return` the value from the method so we can check the results.
 
 ## Displaying Results
@@ -148,13 +143,11 @@ print(die.roll())
 ```
 
 To create a new object, you begin as you would with any variable definition. Here we indicate that our `die` (lowercase!) object will belong to our class `Die`. Because we also need to pass in a value for how many sides our object has, we will give it a value of `6`.
-To create a new object, you begin as you would with any variable definition. Here we indicate that our `die` (lowercase!) object will belong to our class `Die`. Because we also need to pass in a value for how many sides our object has, we will give it a value of `6`.
 
 Next, we use a `print` statement to display the results of our roll method. To call our roll method, we must use our die object and __.__ (dot) notation--recall that methods _need to act upon an object or instance of the class_ in order to be called.
 
 And that's it! You have successfully created a new die object that can be rolled.  If you run the cell, you should see your roll displayed. Additionally, each time you run the cell, you should see a new random number between 1 and 6 in your display.
 
-## Challenge!
 ## Challenge!
 
 If the user rolls a six, tell them that they're a winner and get a prize. If they didn't roll a 6, display that they're a loser.
@@ -220,7 +213,6 @@ We will pass in our two parameters for the class, one for our roll method we cre
 ## Creating Our Class Methods
 
 Next, let's define the methods for our simulator class. We will want one to run our roll method, and one to analyze and print our results:
-Next, let's define the methods for our simulator class. We will want one to run our roll method, and one to analyze and print our results:
 
 ```python
     # run our die roll method and store the results
@@ -235,8 +227,6 @@ In our `run()` method, we use a `for` loop to cycle through by the number of ite
 
 We then want to define our next method, `report()`, to analyze the results from `run()`.
 
-```python
-    # analyze and report the results
 ```python
     # analyze and report the results
     def report(self):
@@ -260,9 +250,7 @@ We then want to define our next method, `report()`, to analyze the results from 
 ```
 
 Our `report()` method uses Python's built-in `max()` and `min()` functions to catch the highest and lowest roll in the list. Using the `stats` library, we also check the mean, median, mode, standard deviation, and variance of the results and print it to the terminal.
-Our `report()` method uses Python's built-in `max()` and `min()` functions to catch the highest and lowest roll in the list. Using the `stats` library, we also check the mean, median, mode, standard deviation, and variance of the results and print it to the terminal.
 
-Our last step is to create a new instance of our simulator class in a new cell, like we did before:
 Our last step is to create a new instance of our simulator class in a new cell, like we did before:
 
 ```python
@@ -305,7 +293,6 @@ Methods are functions that belong to a class. They are called using __.__ (dot) 
 The keyword self represents an instance of a class and binds its attributes with the given arguments.
 </Keywords>
 
-# Part 2 - The Critter Simulator
 # Part 2 - The Critter Simulator
 
 __Goal:__  Create a simulation that tracks the population growth of a proposed (imaginary) species of Critter, taking into account a variety of biological and environmental factors.
