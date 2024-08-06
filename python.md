@@ -468,7 +468,7 @@ Our functions do not have to be "mathematical" in nature. Let's say that I wante
 
 ```python
 def greet():
-    print("Hello! How are you today?")`  
+    print("Hello! How are you today?")  
 greet()
 ```
 
@@ -1490,7 +1490,7 @@ You should get output like this:
 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. Also, be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language. For now, ignore the information within underscores (like `__add__`) and focus on the stuff surrouned by single quotes (like `startswith`).
+The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. Also, be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language. For now, ignore the information within underscores (like `__add__`) and focus on the stuff surrounded by single quotes (like `startswith`).
 
 You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the `random` library again and see what you get when you enter `dir(random)` in the REPL.
 
@@ -1602,7 +1602,7 @@ __1. Which of the following is not true about a function? (Select one):__
 - A function needs to be called in order to run.
 </Quiz>
 
-Revisit the <Link workshop='python' page='21'>`Functions`</Link> lesson to learn more.
+Revisit the <Link workshop='python' page='20'>`Functions`</Link> lesson to learn more.
 
 __2. What are the differences between the terminal, REPL, and text editor? Select the correct statement from the options below.__
 
@@ -1624,7 +1624,7 @@ __3. If we wanted to calculate the length of an input using len(), how would we 
 - len(input()) = length_of_response
 </Quiz>
 
-Revisit the <Link workshop='python' page='44'>`Input`</Link> lesson to learn more.
+Revisit the <Link workshop='python' page='42'>`Input`</Link> lesson to learn more.
 
 __4. What is the difference between the double equals (==) and single equals (=)? (Select all that apply):__
 
@@ -1635,7 +1635,7 @@ __4. What is the difference between the double equals (==) and single equals (=)
 - The single equals checks to see if one value is equivalent to the other, as in 2 = 2.
 </Quiz>
 
-Revisit the <Link workshop='python' page='41'>`Conditionals`</Link> lesson to learn more.
+Revisit the <Link workshop='python' page='39'>`Conditionals`</Link> lesson to learn more.
 
 __5. Select all the variable expressions that are allowed in Python. (Select all that apply):__
 
@@ -1670,7 +1670,7 @@ __7. What are different ways for describing what a “for loop” can do? (Selec
 - loop through characters in a string.*
 </Quiz>
 
-Revisit the <Link workshop='python' page='37'>`Loops`</Link> lesson to learn more.
+Revisit the <Link workshop='python' page='35'>`Loops`</Link> lesson to learn more.
 
 __8. Select the following statements that truly describe sort(), append(), and pop(). (Select all that apply):__
 
@@ -1682,7 +1682,7 @@ __8. Select the following statements that truly describe sort(), append(), and p
 - sort(), append(), and pop() are methods.*
 </Quiz>
 
-Revisit the <Link workshop='python' page='47'>`Doing Things to Lists`</Link> lesson to learn more.
+Revisit the <Link workshop='python' page='45'>`Doing Things to Lists`</Link> lesson to learn more.
 
 __9. What are the characteristics of the REPL? (Select all that apply):__
 
@@ -1704,7 +1704,7 @@ __10. Why would someone use dir()? (Select all that apply):__
 - to examine a particular method, like sort().
 </Quiz>
 
-Revisit the <Link workshop='python' page='58'>`Objects in Python`</Link> lesson to learn more.
+Revisit the <Link workshop='python' page='56'>`Objects in Python`</Link> lesson to learn more.
 
 ## Suggested Further Readings and Tutorials
 
